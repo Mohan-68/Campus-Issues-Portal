@@ -36,9 +36,9 @@
                     <div class="form-group">
                         <label>Select Role</label>
                         <select id="loginRole">
-                            <option value="student" selected> Student</option>
-                            <option value="staff"> Staff</option>
-                            <option value="faculty"> Faculty</option>
+                            <option value="student" selected>Student</option>
+                            <option value="staff">Staff</option>
+                            <option value="faculty">Faculty</option>
                         </select>
                     </div>
 
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="admin-info">
-                    <!-- <p>Default Admin: username: <strong>admin</strong> | password: <strong>admin123</strong></p> -->
+                    <p>Default Admin: username: <strong>admin</strong> | password: <strong>admin123</strong></p>
                 </div>
             </div>
         </div>
@@ -89,9 +89,9 @@
                     <div class="form-group">
                         <label>Select Role</label>
                         <select id="registerRole">
-                            <option value="student" selected> Student</option>
-                            <option value="staff"> Staff</option>
-                            <option value="faculty"> Faculty</option>
+                            <option value="student" selected>Student</option>
+                            <option value="staff">Staff</option>
+                            <option value="faculty">Faculty</option>
                         </select>
                     </div>
 
@@ -115,12 +115,12 @@
                 <div class="header-content">
                     <div class="header-left">
                         <div class="user-icon" id="userRoleIcon">
-                            👤
+                            U
                         </div>
                         <div>
                             <h1 id="dashboardTitle">User Dashboard</h1>
                             <p id="welcomeText">Welcome, user!</p>
-                            <p id="userRoleText" class="user-role-badge"> Student</p>
+                            <p id="userRoleText" class="user-role-badge">Student</p>
                         </div>
                     </div>
                     <button onclick="handleLogout()" class="btn-logout">Logout</button>
@@ -132,7 +132,7 @@
                 <!-- Submit Issue Form (for non-admin) -->
                 <div id="issueFormCard" class="card">
                     <h2 class="card-title">
-                        📝 Submit New Issue
+                        Submit New Issue
                     </h2>
                     
                     <div class="form-group">
@@ -144,14 +144,14 @@
                         <label>Category</label>
                         <select id="issueCategory">
                             <option value="">-- Select Category --</option>
-                            <option value="Electrical">⚡ Electrical</option>
-                            <option value="Plumbing">🚰 Plumbing</option>
-                            <option value="IT and Technical">💻 IT and Technical</option>
-                            <option value="Cleaning">🧹 Cleaning</option>
-                            <option value="Security & Safety">🔒 Security & Safety</option>
-                            <option value="Transport & Parking">🚗 Transport & Parking</option>
-                            <option value="Hostel">🏠 Hostel</option>
-                            <option value="Other">📌 Other</option>
+                            <option value="Electrical">Electrical</option>
+                            <option value="Plumbing">Plumbing</option>
+                            <option value="IT and Technical">IT and Technical</option>
+                            <option value="Cleaning">Cleaning</option>
+                            <option value="Security & Safety">Security & Safety</option>
+                            <option value="Transport & Parking">Transport & Parking</option>
+                            <option value="Hostel">Hostel</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
 
@@ -170,7 +170,7 @@
 
                 <!-- Issues List -->
                 <div class="card" id="issuesListCard">
-                    <h2 class="card-title" id="issuesListTitle">📋 My Submitted Issues</h2>
+                    <h2 class="card-title" id="issuesListTitle">My Submitted Issues</h2>
                     <div id="issuesList" class="issues-list"></div>
                 </div>
             </div>
@@ -179,4 +179,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
