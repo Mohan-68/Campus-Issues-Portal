@@ -11,187 +11,171 @@
     <div id="notification" class="notification hidden"></div>
 
     <!-- Login View -->
-        <div id="loginView" class="view active">
+    <div id="loginView" class="view active">
         <div class="container">
-        <div class="auth-card">
-        <div class="auth-header">
-        <div class="login-header">
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg> -->
-        </div>
-            <h1>🎓Campus Portal</h1>
-                <p>Issues & Service Tracking</p>
-        </div>
+            <div class="auth-card">
+                <div class="auth-header">
+                    <div class="icon-badge">
+                        🎓
+                    </div>
+                    <h1>Campus Portal</h1>
+                    <p>Issues & Service Tracking</p>
+                </div>
 
-        <div class="auth-form">
-        <div class="form-group">
-                    <label>Username</label>
-                    <input type="text" id="loginUsername" placeholder="Enter username">
-        </div>
+                <div class="auth-form">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="loginUsername" placeholder="Enter username">
+                    </div>
 
-        <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" id="loginPassword" placeholder="Enter password">
-        </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter password">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Role</label>
+                        <select id="loginRole">
+                            <option value="student" selected> Student</option>
+                            <option value="staff"> Staff</option>
+                            <option value="faculty"> Faculty</option>
+                        </select>
+                    </div>
 
                     <button onclick="handleLogin()" class="btn-primary">Login</button>
-        </div>
+                </div>
 
-        <div class="auth-footer">
+                <div class="auth-footer">
                     <button onclick="showRegister()" class="link-btn">
                         Don't have an account? Register here
                     </button>
-        </div>
+                </div>
 
-        <div class="admin-info">
-                 <p>Default Admin: username: 
-                        <!-- <strong>admin</strong> | password: <strong>admin123</strong> -->
-                 </p>
+                <div class="admin-info">
+                    <p>Default Admin: username: <strong>admin</strong> | password: <strong>admin123</strong></p>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        </div>
+    </div>
 
     <!-- Register View -->
     <div id="registerView" class="view">
         <div class="container">
-        <div class="auth-card">
-        <div class="auth-header">
-        <div class="icon-badge">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-                 </svg>
-        </div>
-            <h1>Register</h1>
-                <p>Create your account</p>
-        </div>
+            <div class="auth-card">
+                <div class="auth-header">
+                    <div class="icon-badge">
+                        👤
+                    </div>
+                    <h1>Register</h1>
+                    <p>Create your account</p>
+                </div>
 
-        <div class="auth-form">
-        <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" id="registerName" placeholder="Enter full name">
-        </div>
+                <div class="auth-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="registerName" placeholder="Enter full name">
+                    </div>
 
-        <div class="form-group">
-                <label>Username</label>
-                <input type="text" id="registerUsername" placeholder="Choose username">
-        </div>
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="registerUsername" placeholder="Choose username">
+                    </div>
 
-        <div class="form-group">
-                <label>Password</label>
-                <input type="password" id="registerPassword" placeholder="Choose password">
-        </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="registerPassword" placeholder="Choose password">
+                    </div>
 
-        <div class="form-group">
-                <label>Role</label>
-                <select id="registerRole">
-                    <option value="student">Student</option>
-                    <option value="staff">Staff</option>
-                    <option value="faculty">Faculty</option>
-                </select>
-        </div>
+                    <div class="form-group">
+                        <label>Select Role</label>
+                        <select id="registerRole">
+                            <option value="student" selected> Student</option>
+                            <option value="staff"> Staff</option>
+                            <option value="faculty"> Faculty</option>
+                        </select>
+                    </div>
 
-                <button onclick="handleRegister()" class="btn-primary">Register</button>
-        </div>
+                    <button onclick="handleRegister()" class="btn-primary">Register</button>
+                </div>
 
-        <div class="auth-footer">
-                <button onclick="showLogin()" class="link-btn">
+                <div class="auth-footer">
+                    <button onclick="showLogin()" class="link-btn">
                         Already have an account? Login here
-                </button>
+                    </button>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        </div>
+    </div>
 
     <!-- Dashboard View -->
     <div id="dashboardView" class="view">
         <div class="dashboard-bg">
-    <!-- Header Card -->
-        <div class="dashboard-header">
-        <div class="header-content">
-        <div class="header-left">
-        <div class="👨‍💼">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-                </svg> -->
-        </div>
-        <div>
-            <h1 👨‍💼 id="dashboardTitle"> User Dashboard</h1>
-                <p id="welcomeText">Welcome, user!</p>
-        </div>
-        </div>
+            <!-- Header Card -->
+            <div class="dashboard-header">
+                <div class="header-content">
+                    <div class="header-left">
+                        <div class="user-icon" id="userRoleIcon">
+                            👤
+                        </div>
+                        <div>
+                            <h1 id="dashboardTitle">User Dashboard</h1>
+                            <p id="welcomeText">Welcome, user!</p>
+                            <p id="userRoleText" class="user-role-badge"> Student</p>
+                        </div>
+                    </div>
                     <button onclick="handleLogout()" class="btn-logout">Logout</button>
-        </div>
-        </div>
+                </div>
+            </div>
 
-     <!-- Main Content Grid -->
-        <div class="dashboard-grid" id="dashboardGrid">
+            <!-- Main Content Grid -->
+            <div class="dashboard-grid" id="dashboardGrid">
                 <!-- Submit Issue Form (for non-admin) -->
-         <div id="issueFormCard" class="card">
-            <h2 class="card-title">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                       <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                       <polyline points="14 2 14 8 20 8"></polyline>
-                       <line x1="16" y1="13" x2="8" y2="13"></line>
-                       <line x1="16" y1="17" x2="8" y2="17"></line>
-                       <polyline points="10 9 9 9 8 9"></polyline>
-                    </svg>
-                     Submit New Issue
-             </h2>
+                <div id="issueFormCard" class="card">
+                    <h2 class="card-title">
+                        📝 Submit New Issue
+                    </h2>
                     
-        <div class="form-group">
-                    <label>Issue Title</label>
-                    <input type="text" id="issueTitle" placeholder="Brief title of the issue">
-        </div>
+                    <div class="form-group">
+                        <label>Issue Title</label>
+                        <input type="text" id="issueTitle" placeholder="Brief title of the issue">
+                    </div>
 
-        <div class="form-group">
-                    <label>Category</label>
-                    <select id="issueCategory">
-                       <option value="">-- Select Category --</option>
-                       <option value="Electrical">Electrical</option>
-                       <option value="Plumbing">Plumbing</option>
-                       <option value="IT and Technical">IT and Technical</option>
-                       <option value="Cleaning">Cleaning</option>
-                       <option value="Security & Safety">Security & Safety</option>
-                       <option value="Transport & Parking">Transport & Parking</option>
-                       <option value="Hostel">Hostel</option>
-                       <option value="Other">Other</option>
-                    </select>
-        </div>
+                    <div class="form-group">
+                        <label>Category</label>
+                        <select id="issueCategory">
+                            <option value="">-- Select Category --</option>
+                            <option value="Electrical">⚡ Electrical</option>
+                            <option value="Plumbing">🚰 Plumbing</option>
+                            <option value="IT and Technical">💻 IT and Technical</option>
+                            <option value="Cleaning">🧹 Cleaning</option>
+                            <option value="Security & Safety">🔒 Security & Safety</option>
+                            <option value="Transport & Parking">🚗 Transport & Parking</option>
+                            <option value="Hostel">🏠 Hostel</option>
+                            <option value="Other">📌 Other</option>
+                        </select>
+                    </div>
 
-        <div class="form-group">
-                    <label>Location</label>
-                    <input type="text" id="issueLocation" placeholder="Block / Room / Department">
-        </div>
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" id="issueLocation" placeholder="Block / Room / Department">
+                    </div>
 
-        <div class="form-group">
-                    <label>Description</label>
-                    <textarea id="issueDescription" rows="4" placeholder="Detailed description of the issue"></textarea>
-        </div>
-
-        <div class="form-group">
-                    <label>Upload Photo (Optional)</label>
-                    <input type="file" id="issuePhoto" accept="image/*">
-        <div id="photoPreview" class="photo-preview hidden">
-                    <img id="previewImage" alt="Preview">
-        </div>
-        </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="issueDescription" rows="4" placeholder="Detailed description of the issue"></textarea>
+                    </div>
 
                     <button onclick="handleSubmitIssue()" class="btn-submit">Submit Issue</button>
-        </div>
+                </div>
 
-    <!-- Issues List -->
-        <div class="card" id="issuesListCard">
-       <h2 class="card-title" id="issuesListTitle">My Submitted Issues</h2>
-        <div id="issuesList" class="issues-list"></div>
+                <!-- Issues List -->
+                <div class="card" id="issuesListCard">
+                    <h2 class="card-title" id="issuesListTitle">📋 My Submitted Issues</h2>
+                    <div id="issuesList" class="issues-list"></div>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        </div>
-
-    <script src="script.js"></script>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>
